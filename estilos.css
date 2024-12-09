@@ -1,0 +1,95 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff; /* Fondo ligero */
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 80px; /* Espacio debajo del título */
+    text-align: center; /* Centra el título */
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px; /* Espacio entre párrafos */
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* Imagen de la página */
+img {
+    width: 70%; /* Se extiende a lo largo de la pantalla */
+    height: auto;
+}
+
+/* Contenedor principal */
+main {
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* Botones */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Imagen de la página */
+.imagen-pagina {
+    width: 50%;
+    height: auto;
+    display: block center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la sección de creadores */
+.creadores {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre los creadores */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.creador {
+    display: flex;
+    align-items: center; /* Alinea la imagen con el texto */
+    gap: 20px; /* Espaciado entre la foto y la información */
+    border: 1px solid #ccc; /* Opcional: borde para cada creador */
+    padding: 8px;
+    width: 90%; /* Asegura que no ocupe todo el ancho de la pantalla */
+    max-width: 600px; /* Tamaño máximo */
+}
+
+/* Foto de cada creador */
+.foto-creador {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Asegura que la foto no se deforme */
+    border-radius: 50%; /* Opcional: hace las imágenes redondas */
+}
+
+/* Información de los creadores */
+.info-creador p {
+    margin: 0; /* Elimina márgenes entre líneas */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopa de Letras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        .sopa {
+            display: grid;
+            grid-template-columns: repeat(12, 40px);
+            justify-content: center;
+            gap: 5px;
+        }
+        .letra {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+        }
+        .letra:hover {
+            background-color: #dfe6e9;
+        }
+        .letra.seleccionada {
+            background-color: #74b9ff;
+            color: white;
+        }
+        .palabras {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const letras = document.querySelectorAll('.letra');
+            letras.forEach(letra => {
+                letra.addEventListener('click', () => {
+                    letra.classList.toggle('seleccionada');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Sopa de Letras</h1>
+    <div class="sopa">
+        <!-- First Column -->
+        <div class="letra">D</div>
+        <div class="letra">E</div>
+        <div class="letra">R</div>
+        <div class="letra">E</div>
+        <div class="letra">C</div>
+        <div class="letra">H</div>
+        <div class="letra">O</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+
+        <!-- Second Column -->
+        <div class="letra">S</div>
+        <div class="letra">E</div>
+        <div class="letra">G</div>
+        <div class="letra">U</div>
+        <div class="letra">R</div>
+        <div class="letra">I</div>
+        <div class="letra">D</div>
+        <div class="letra">A</div>
+        <div class="letra">D</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+
+        <!-- Third Column -->
+        <div class="letra">L</div>
+        <div class="letra">F</div>
+        <div class="letra">P</div>
+        <div class="letra">D</div>
+        <div class="letra">P</div>
+        <div class="letra">P</div>
+        <div class="letra">P</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+
+        <!-- Fourth Column -->
+        <div class="letra">C</div>
+        <div class="letra">R</div>
+        <div class="letra">I</div>
+        <div class="letra">P</div>
+        <div class="letra">T</div>
+        <div class="letra">O</div>
+        <div class="letra">G</div>
+        <div class="letra">R</div>
+        <div class="letra">A</div>
+        <div class="letra">F</div>
+        <div class="letra">I</div>
+        <div class="letra">A</div>
+
+        <!-- Fifth Column -->
+        <div class="letra">L</div>
+        <div class="letra">E</div>
+        <div class="letra">G</div>
+        <div class="letra">I</div>
+        <div class="letra">S</div>
+        <div class="letra">L</div>
+        <div class="letra">A</div>
+        <div class="letra">C</div>
+        <div class="letra">I</div>
+        <div class="letra">O</div>
+        <div class="letra">N</div>
+        <div class="letra">X</div>
+
+        <!-- Sixth Column -->
+        <div class="letra">H</div>
+        <div class="letra">T</div>
+        <div class="letra">M</div>
+        <div class="letra">L</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+        <div class="letra">X</div>
+
+        <!-- Fill with random letters -->
+        <div class="letra">Q</div>
+        <div class="letra">W</div>
+        <div class="letra">E</div>
+        <div class="letra">R</div>
+        <div class="letra">T</div>
+        <div class="letra">Y</div>
+        <div class="letra">U</div>
+        <div class="letra">I</div>
+        <div class="letra">O</div>
+        <div class="letra">P</div>
+        <div class="letra">A</div>
+        <div class="letra">S</div>
+    </div>
+    <div class="palabras">
+        <p><strong>Palabras a encontrar:</strong> DERECHO, SEGURIDAD, LEGISLACION, HTML, PROTECCION, LFPDPPP, CLAUSULAS, CRIPTOGRAFIA, LPD</p>
+    </div>
+
+    </main>
+
+    <button onclick="location.href='Index.html'">Regresar</button>
+</body>
+</html>
